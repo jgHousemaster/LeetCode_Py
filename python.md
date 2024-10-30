@@ -1,5 +1,16 @@
 # Python 语法笔记
 
+## 基础语法
+
+### 循环
+
+- for 循环
+  ```python
+  for i in range(5):
+      print(i)
+  ```
+  - `range(start, stop[, step])`：生成从 start 到 stop 的整数序列，步长为 step，默认从 0 开始，步长为 1，不包含 stop。
+
 ## 常用容器
 
 ### list
@@ -27,6 +38,7 @@
 - 删除元素：
   - `remove(x)`：删除指定元素
   - `pop([i])`：删除指定位置的元素
+  - `pop()`：删除右侧最后一个元素
 - 修改元素：
   - `list[i] = x`
 - 获取大小：

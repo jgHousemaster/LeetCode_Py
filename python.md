@@ -45,6 +45,29 @@
   - `len(list)`
 - 切片：
   - `list[start:end:step]`
+- 排序：
+  - `my_list.sort(key=None, reverse=False)`：排序
+  - `sorted(my_list, key=None, reverse=False)`：返回排序后的列表
+
+### String
+
+- 创建：`str()` 或 `''` 或 `""`
+- 读取元素：
+  - `str[i]`
+  - `str[start:end:step]`，从 0 开始，不包含 end
+- 添加元素：
+  - `+`：连接字符串
+  - `*`：重复字符串
+  - `str.join(iterable)`：连接可迭代对象
+  - 插入元素：`str[:i] + x + str[i:]`
+  - 删除元素：`str[:i] + str[i+1:]`
+- 查找元素：
+  - `str.find(sub[, start[, end]])`：返回第一个匹配子字符串的索引，找不到返回 -1
+  - `str.index(sub[, start[, end]])`：返回第一个匹配子字符串的索引，找不到抛出异常
+  - `str.count(sub[, start[, end]])`：返回子字符串出现的次数
+- 转换为数字：
+  - `int(str)`：转换为整数
+  - `float(str)`：转换为浮点数
 
 ## 队列与栈
 
@@ -84,3 +107,4 @@
   - `pop()`：右侧删除元素
 - peek：
   - `stack[-1]`：返回右侧第一个元素
+

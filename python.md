@@ -69,6 +69,22 @@
   - `int(str)`：转换为整数
   - `float(str)`：转换为浮点数
 
+### 字典
+
+- 创建：`dict()` 或 `{}`
+  - defalutdict：`from collections import defaultdict`
+    - `my_dict = defaultdict(list)`：创建一个每个 key 默认带一个空列表的字典，直接 `my_dict[key].append(value)` 添加元素即可，无需判断 key 是否存在
+- 读取元素：
+  - `dict[key]`
+- 添加元素：
+  - `dict[key] = value`
+- 删除元素：
+  - `del dict[key]`
+  - `dict.pop(key)`
+- 查找元素：
+  - `dict.get(key[, default])`：返回指定键的值，找不到返回默认值
+  - `dict.setdefault(key[, default])`：返回指定键的值，找不到添加默认值
+
 ## 队列与栈
 
 ### deque
